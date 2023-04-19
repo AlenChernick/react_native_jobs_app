@@ -18,7 +18,11 @@ const JobDetails = () => {
     const [refreshing, setRefereshing] = useState(false);
     const [activeTab, setActiveTab] = useState(tabs[0])
 
-    const onRefresh = () => { }
+    const onRefresh = useCallback(() => {
+        setRefereshing(true);
+        refetch();
+        setRefereshing(false)
+    }, [])
 
     const displayTabContent = () => {
         switch (activeTab) {
