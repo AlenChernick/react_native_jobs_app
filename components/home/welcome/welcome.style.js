@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   searchContainer: {
     justifyContent: "center",
     alignItems: "center",
-    flexDirection: "row",
+    flexDirection: "row-reverse",
     marginTop: SIZES.large,
     height: 50,
   },
@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
     width: "50%",
     height: "50%",
     tintColor: COLORS.white,
+    justifyContent: "flex-start"
   },
   tabsContainer: {
     width: "100%",
